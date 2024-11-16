@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bem-vindo, Paciente!"
+        android:textSize="24sp"
+        android:paddingBottom="16dp" />
+
+    <!-- Botão para o paciente agendar consulta -->
+    <Button
+        android:id="@+id/btnMarcarConsulta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marcar Consulta" />
+
+    <!-- Exemplo de outros itens da interface (podem ser substituídos ou removidos) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minhas Consultas"
+        android:textSize="20sp"
+        android:paddingTop="20dp"
+        android:paddingBottom="8dp" />
+
+    <!-- Aqui você pode adicionar um RecyclerView para exibir as consultas, se necessário -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvConsultasPaciente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp" />
+</LinearLayout>

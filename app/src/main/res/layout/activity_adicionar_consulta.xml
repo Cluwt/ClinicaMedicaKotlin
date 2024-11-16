@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Spinner para selecionar o paciente -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecione o Paciente"
+            android:paddingBottom="8dp" />
+
+        <Spinner
+            android:id="@+id/spinnerPaciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown" />
+
+        <!-- Campo para exibir a data e hora da consulta -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data e Hora da Consulta"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvDataHora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data e hora não selecionadas"
+            android:background="?android:attr/editTextBackground"
+            android:padding="12dp" />
+
+        <!-- Botão para selecionar a data e hora -->
+        <Button
+            android:id="@+id/btnSelecionarDataHora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Escolher Data e Hora"
+            android:layout_marginTop="8dp" />
+
+        <!-- Campo de texto para inserir o motivo da consulta -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Motivo da Consulta"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etMotivoConsulta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite o motivo da consulta"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:background="?android:attr/editTextBackground"
+            android:padding="12dp" />
+
+        <!-- Botão para salvar a consulta -->
+        <Button
+            android:id="@+id/btnSalvarConsulta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salvar Consulta"
+            android:layout_marginTop="24dp" />
+
+    </LinearLayout>
+</ScrollView>

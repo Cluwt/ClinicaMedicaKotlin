@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Spinner
+        android:id="@+id/spinnerMedico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Selecione o Médico" />
+
+    <EditText
+        android:id="@+id/etMotivoConsulta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Motivo da Consulta" />
+
+    <!-- TextView para exibir a data escolhida -->
+    <TextView
+        android:id="@+id/tvDataConsulta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Selecionar Data"
+        android:padding="12dp"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:textColor="?android:attr/textColorPrimary" />
+
+    <!-- TextView para exibir a hora escolhida -->
+    <TextView
+        android:id="@+id/tvHoraConsulta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Selecionar Hora"
+        android:padding="12dp"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:textColor="?android:attr/textColorPrimary" />
+
+    <Button
+        android:id="@+id/btnAgendarConsulta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agendar Consulta" />
+</LinearLayout>
